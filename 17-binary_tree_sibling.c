@@ -1,7 +1,7 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_t - gets the sibling of a node
+ * binary_tree_sibling - gets the sibling of a node
  * @node: node to get sibling of
  * Return: returns a pointer to sibling node
  */
@@ -12,7 +12,7 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 	if (node == NULL)
 		return (NULL);
 	if (node->parent == NULL)
-		return NULL;
+		return (NULL);
 
 	parent = node->parent;
 
@@ -28,5 +28,5 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 		}
 	}
 
-	return NULL;
+	return (NULL);
 }
