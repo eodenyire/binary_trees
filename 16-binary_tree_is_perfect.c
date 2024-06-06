@@ -20,7 +20,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	r = binary_tree_is_perfect(tree->right);
 	l = binary_tree_is_perfect(tree->left);
 
-	if (r == l)
+	if (r == l && r > 0 && l > 0)
 	{
 		if (tree->left != NULL && tree->right != NULL)
 		{
